@@ -1,5 +1,12 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<ul>
+    <li>{{#link-to 'clock'}}Clock{{/link-to}}</li>
+    <li>{{#link-to 'timer'}}Timer{{/link-to}}</li>
+    <li>{{#link-to 'stopwatch'}}Stopwatch{{/link-to}}</li>
+    <li><a style="display: inline; background-color: #0c2540;" href="http://www.github.com/JaredLGillespie/ember-clock"><img class="github" src="Octicons-mark-github.svg"/></a></li>
+</ul>
 
 {{outlet}}
+
+<div class="footer">
+    Made by me (Jared Gillespie)
+</div>

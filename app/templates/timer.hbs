@@ -1,0 +1,16 @@
+<div id="clock">
+    <p class="time {{if isStopped 'stopped'}}">{{pad-string hours 2 '0'}}:{{pad-string minutes 2 '0'}}:{{pad-string seconds 2 '0'}}</p>
+    {{#if isStopped}} 
+        <button class="start" {{action "start"}}>Start</button>
+    {{else}}
+        <button class="stop" {{action "stop"}}>Stop</button>
+    {{/if}}
+    <button class="reset" {{action "reset"}}>Reset</button>
+    <div class="setting-box">
+    {{#if isStopped}}
+        <p>Hour<button class="timer-setting" {{action "hourInc"}}>+</button><button class="timer-setting" {{action "hourDec"}}>-</button></p>
+        <p>Minute<button class="timer-setting" {{action "minuteInc"}}>+</button><button class="timer-setting" {{action "minuteDec"}}>-</button></p>
+        <p>Second<button class="timer-setting" {{action "secondInc"}}>+</button><button class="timer-setting" {{action "secondDec"}}>-</button></p>
+    {{/if}}
+    </div>
+</div>

@@ -7,6 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('clock');
+  this.route('stopwatch');
+  this.route('timer');
 });
 
 export default Router;
