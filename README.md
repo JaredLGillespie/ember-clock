@@ -1,4 +1,5 @@
 # ember-clock
+https://jaredlgillespie.github.io/ember-clock/
 
 This is a simple clock web-application built with Ember. The following three pages exist:
 * clock
